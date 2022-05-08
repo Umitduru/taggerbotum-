@@ -1,0 +1,22 @@
+{
+  "name": "Telegram Mention TaggerBot",
+  "logo":"https://telegra.ph/file/dfa517fd00b6ca5f7ac9.jpg",
+  "description": "User tagger bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
+  "env": {
+    "TOKEN": {
+      "description": "bot token girin.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "@otomytelegrambot dan api hash api id alınız.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "@otomytelegrambot dan api hash api id alınız.",
+      "value": ""
+    }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
+}
