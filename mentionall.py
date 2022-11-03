@@ -37,11 +37,11 @@ async def start(event):
   await event.reply("**Grub Tagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/sakirtagger_bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/patronlarsohbet_tr?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/Sakirbey2'),
-                         Button.url('👮Developer', 'https://t.me/SakirBey1'),
+                         Button.url('📣 Kanal', 'https://t.me/patronlarsohbet_tr'),
+                         Button.url('👮Developer', 'https://t.me/arthrunuz'),
                       ]
                     ),
                     link_preview=False
@@ -55,8 +55,8 @@ async def help(event):
                          Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/sakirtagger_bot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/Sakirbey2'),
-                         Button.url('👮Developer', 'https://t.me/SakirBey1'),
+                         Button.url('📣 Kanal', 'https://t.me/patronlarsohbet_tr'),
+                         Button.url('👮Developer', 'https://t.me/arthurunuz'),
                       ]
                     ),
                     link_preview=False
@@ -156,7 +156,7 @@ async def etag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(cumle)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n SakirBey2")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n patronlarsohbet_tr")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -174,7 +174,7 @@ async def etag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(cumle)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n @SakirBey2")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n @patronlarsohbet_tr")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -216,7 +216,7 @@ async def nick(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emj)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n @SakirBey2")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n @patronlarsohbet_tr")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -234,7 +234,7 @@ async def nick(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emj)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n @SakirBey2")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n @patronlarsohbet_tr")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -275,7 +275,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SakirBey2**❌****")
+        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @patronlarsohbet_tr**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -293,7 +293,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id})"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @SakirBey2**❌**")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @patronlarsohbet_tr**❌**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -301,5 +301,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot çalıyor merak etme 🚀 @SakirBey1 bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @arthurunuz bilgi alabilirsin <<")
 client.run_until_disconnected()
