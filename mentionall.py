@@ -37,7 +37,7 @@ async def start(event):
   await event.reply("**Grub Tagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/patronlarsohbet_tr?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/tg_tagbot?startgroup=a')
                       ],
                       [
                          Button.url('📣 Kanal', 'https://t.me/patronlarsohbet_tr'),
@@ -56,7 +56,7 @@ async def help(event):
                       ],
                       [
                          Button.url('📣 Kanal', 'https://t.me/patronlarsohbet_tr'),
-                         Button.url('👮Developer', 'https://t.me/arthurunuz'),
+                         Button.url('👮Developer', 'https://t.me/sessizkatillersohbet'),
                       ]
                     ),
                     link_preview=False
@@ -242,7 +242,7 @@ async def nick(event):
         usrnum = 0
         usrtxt = ""
 
-@client.on(events.NewMessage(pattern="^/tektag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/tag ?(.*)"))
 async def mentionall(event):
   global tekli_calisan
   if event.is_private:
