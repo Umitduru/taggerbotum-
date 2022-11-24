@@ -156,7 +156,7 @@ async def etag(event):
       usrnum += 1
       usrtxt += f"[{random.choice(cumle)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n patronlarsohbet_tr")
+        await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌ \n ")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
