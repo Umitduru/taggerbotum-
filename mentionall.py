@@ -56,7 +56,7 @@ async def help(event):
                       ],
                       [
                          Button.url('📣 Kanal', 'https://t.me/patronlarsohbet_tr'),
-                         Button.url('👮Developer', 'https://t.me/suskunlarasistan),
+                         Button.url('👮Developer','https://t.me/suskunlarasistan'),
                       ]
                     ),
                     link_preview=False
