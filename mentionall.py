@@ -41,7 +41,7 @@ async def start(event):
                       ],
                       [
                          Button.url('📣 Kanal', 'https://t.me/patronlarsohbet_tr'),
-                         Button.url('👮Developer', 'https://t.me/arthrunuz'),
+                         Button.url('👮Developer', 'https://t.me/suskunlarasistan'),
                       ]
                     ),
                     link_preview=False
@@ -52,7 +52,7 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/sakirtagger_bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/tg_tagbot_bot?startgroup=a')
                       ],
                       [
                          Button.url('📣 Kanal', 'https://t.me/patronlarsohbet_tr'),
@@ -123,7 +123,7 @@ async def mentionall(event):
         usrtxt = ""
 
 # Emoji
-@client.on(events.NewMessage(pattern="^/itag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/stag ?(.*)"))
 async def etag(event):
   global anlik_calisan
   if event.is_private:
@@ -301,5 +301,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot çalıyor merak etme 🚀 @arthurunuz bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @suskunlarasistan bilgi alabilirsin <<")
 client.run_until_disconnected()
